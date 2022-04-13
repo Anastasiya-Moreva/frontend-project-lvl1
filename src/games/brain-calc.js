@@ -1,11 +1,8 @@
 import { getRandom, getRandomOperator, calc } from '../helpers.js'
-import greetitg from '../cli.js';
 import readlineSync from 'readline-sync';
 
-const NAME = greetitg();
 
-
-const gameRound = () => {
+const gameRound = (username) => {
   const num1 = getRandom(0, 100)
   const num2 = getRandom(0, 100)
   const mathOperator = getRandomOperator()
@@ -19,21 +16,11 @@ const gameRound = () => {
     return true
   }
   if (userAnswer !== answer) {
-    console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.
-    Let's try again, ${NAME}!`)
+    console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.\nLet's try again, ${username}!`)
   }
   return false
 
 }
 
-export const startGame = (numberRound = 3) => {
-  for (let i = 0; i < numberRound; i += 1) {
-    const resultRound = gameRound();
-    if (!resultRound) {
-      return;
-    }
-  }
-  console.log(`Congratulations, ${NAME}`);
-}
 
-export default startGame
+export default gameRound

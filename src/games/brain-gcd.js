@@ -1,9 +1,7 @@
 import readlineSync from 'readline-sync';
-import greetitg from '../cli.js'
 import { getRandom } from '../helpers.js'
-const NAME = greetitg();
 
-const gameRound = () => {
+const gameRound = (username) => {
     const num1 = getRandom(0, 100)
     const num2 = getRandom(0, 100)
 
@@ -14,21 +12,10 @@ const gameRound = () => {
         console.log('Correct!')
         return true
     } else {
-        console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.\nLet's try again, ${NAME}!`)
+        console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.\nLet's try again, ${username}!`)
     }
     return false
 }
-
-
-export const startGame = (numberRound = 3) => {
-    for (let i = 0; i < numberRound; i += 1) {
-      const resultRound = gameRound();
-      if (!resultRound) {
-        return;
-      }
-    }
-    console.log(`Congratulations, ${NAME}`);
-  }
 
 
 export const maxDevid = (num1, num2) => {
@@ -40,4 +27,4 @@ export const maxDevid = (num1, num2) => {
     }
 }
 
-export default startGame
+export default gameRound

@@ -1,10 +1,8 @@
 import readlineSync from 'readline-sync';
-import welcome from '../cli.js';
-import { getRandom } from "../helpers.js"
+import { getRandom } from "../helpers.js";
 
-const NAME = welcome()
 
-const gameRound = () => {
+const gameRound = (username) => {
     const arr = arithProgressiv(getRandom(0, 100), getRandom(0, 100))
     const index = getRandom(0, arr.length - 1)
     const hide = hideValue(arr, index)
@@ -18,13 +16,13 @@ const gameRound = () => {
     }
 
     if (Number(userAnswer) !== answer) {
-        console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}}. Let's try again, ${NAME}!`)
+        console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}}. Let's try again, ${username}!`)
         return false
     }
     return true
 }
 
-const points = '..'
+
 export const arithProgressiv = (num, delta, elements = 10) => {
     const values = []
     values.push(num)
@@ -36,6 +34,7 @@ export const arithProgressiv = (num, delta, elements = 10) => {
     return values
 }
 
+const points = '..'
 
 const hideValue = (array, index) => {
     const newArray = array.slice() 
@@ -43,15 +42,5 @@ const hideValue = (array, index) => {
     return newArray
 }
 
-export const startGame = (numberRound = 3) => {
-    for (let i = 0; i < numberRound; i += 1) {
-      const resultRound = gameRound();
-      if (!resultRound) {
-        return;
-      }
-    }
-    console.log(`Congratulations, ${NAME}`);
-  }
-  
 
-export default startGame
+export default gameRound

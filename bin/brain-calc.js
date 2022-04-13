@@ -1,5 +1,8 @@
 #!/usr/bin/env node
+import gameRound from '../src/games/brain-calc.js'
+import startGame from '../src/games/start.js'
+import greetitg from '../src/cli.js'
 
-import startGame from '../src/games/brain-calc.js'
 
-startGame();
+const username = greetitg()
+startGame(username, gameRound)

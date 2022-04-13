@@ -1,11 +1,9 @@
 import { getRandom } from "../helpers.js"
-import greetitg from "../cli.js"
 import { yesOrNoToBool } from "../helpers.js"
 import readlineSync from 'readline-sync';
 
-const NAME = greetitg()
 
-const gameRound = () => {
+const gameRound = (username) => {
     const number = getRandom(0, 100);
     const question = `Answer "yes" if given is prime. Otherwise answer "no"\nQuestion: ${number}\nYour answer :`
     const userAnswer = readlineSync.question(question);
@@ -15,11 +13,11 @@ const gameRound = () => {
     }
     const result = yesOrNoToBool(userAnswer);
     if (result !== primeNumber(number)) {
-        console.log(`${userAnswer} is wrong answer ;(.Correct answer was ${userAnswer}Let's try again, ${NAME}!)`);
+        console.log(`${userAnswer} is wrong answer ;(.Correct answer was ${userAnswer}Let's try again, ${username}!)`);
     } else {
         console.log('Correct!');
     }
-    return result;
+    return true;
 }
 
 export const primeNumber = (num) => {
@@ -34,8 +32,4 @@ export const primeNumber = (num) => {
     return true
 }
 
-export default primeNumber
-
-gameRound()
-
-
+export default gameRound
