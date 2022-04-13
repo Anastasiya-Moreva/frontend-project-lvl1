@@ -2,12 +2,12 @@ import readlineSync from 'readline-sync';
 import greetitg from '../cli.js'
 import { yesOrNoToBool, isEven, getRandom } from '../helpers.js'
 
-// узнаем имя при старте
+
 const NAME = greetitg();
 
 const gameRound = () => {
   const number = getRandom(0, 100);
-  const question = `Answer "yes" if the ${number} is even, otherwise answer "no" \n`;
+  const question = `Answer "yes" if the is even, otherwise answer "no" \nQuestion: ${number}\nYour answer:`;
   const userAnswer = readlineSync.question(question);
   if ((!['yes', 'no'].includes(userAnswer))) {
     console.log('Input is Incorrect');
@@ -16,9 +16,9 @@ const gameRound = () => {
   const answer = isEven(number);
   const result = yesOrNoToBool(userAnswer) === answer;
   if (result === false) {
-    console.log(`${userAnswer} is wrong answer ;(.Correct answer was ${answer}Let's try again, ${NAME}!)`);
+    console.log(`${userAnswer} is wrong answer ;(.Correct answer was ${answer}\n Let's try again, ${NAME}!)`);
   } else {
-    console.log('Correct');
+    console.log('Correct!');
   }
   return result;
 };

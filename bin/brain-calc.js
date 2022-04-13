@@ -1,4 +1,4 @@
-console.log('Welcome to the Brain Games(calc)!');
+#!/usr/bin/env node
 
 import startGame from '../src/games/brain-calc.js'
 

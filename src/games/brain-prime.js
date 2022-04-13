@@ -7,7 +7,7 @@ const NAME = greetitg()
 
 const gameRound = () => {
     const number = getRandom(0, 100);
-    const question = `"yes" if given ${number} is prime. Otherwise answer "no" \n`
+    const question = `Answer "yes" if given is prime. Otherwise answer "no"\nQuestion: ${number}\nYour answer :`
     const userAnswer = readlineSync.question(question);
     if ((!['yes', 'no'].includes(userAnswer))) {
         console.log('Input is Incorrect');
@@ -17,7 +17,7 @@ const gameRound = () => {
     if (result !== primeNumber(number)) {
         console.log(`${userAnswer} is wrong answer ;(.Correct answer was ${userAnswer}Let's try again, ${NAME}!)`);
     } else {
-        console.log('Correct');
+        console.log('Correct!');
     }
     return result;
 }
