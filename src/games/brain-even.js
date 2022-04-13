@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import welcome from '../cli.js'
+import greetitg from '../cli.js'
 import { yesOrNoToBool, isEven, getRandom } from '../helpers.js'
 
 // узнаем имя при старте
-const NAME = welcome();
+const NAME = greetitg();
 
 const gameRound = () => {
   const number = getRandom(0, 100);

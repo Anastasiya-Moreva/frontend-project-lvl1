@@ -1,8 +1,8 @@
 import { getRandom, getRandomOperator, calc } from '../helpers.js'
-import welcome from '../cli.js';
+import greetitg from '../cli.js';
 import readlineSync from 'readline-sync';
 
-const NAME = welcome();
+const NAME = greetitg();
 
 
 const gameRound = () => {

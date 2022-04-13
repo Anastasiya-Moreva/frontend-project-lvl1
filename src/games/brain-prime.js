@@ -1,9 +1,9 @@
 import { getRandom } from "../helpers.js"
-import welcome from "../cli.js"
+import greetitg from "../cli.js"
 import { yesOrNoToBool } from "../helpers.js"
 import readlineSync from 'readline-sync';
 
-const NAME = welcome()
+const NAME = greetitg()
 
 const gameRound = () => {
     const number = getRandom(0, 100);

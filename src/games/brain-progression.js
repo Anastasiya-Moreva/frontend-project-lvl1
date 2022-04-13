@@ -9,7 +9,7 @@ const gameRound = () => {
     const index = getRandom(0, arr.length - 1)
     const hide = hideValue(arr, index)
 
-    let userAnswer = readlineSync.question(`${hide.join(', ')} What number is missing in the progression?\n`)
+    let userAnswer = readlineSync.question(`${hide.join(', ')} What number is missing in the progression?`)
     userAnswer = Number(userAnswer)
     const answer = arr[index]
     if (Number(userAnswer) === answer) {
