@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandom } from "../helpers.js";
+import { getRandom } from "../index.js";
+import { arithProgressiv } from '../index.js';
+import { hideValue } from '../index.js'
 
 
 const gameRound = (username) => {
@@ -20,26 +22,6 @@ const gameRound = (username) => {
         return false
     }
     return true
-}
-
-
-export const arithProgressiv = (num, delta, elements = 10) => {
-    const values = []
-    values.push(num)
-
-    for (let i = 0; i < elements - 1; i++) {
-        num = num + delta
-        values.push(num)
-    }
-    return values
-}
-
-const points = '..'
-
-const hideValue = (array, index) => {
-    const newArray = array.slice() 
-    newArray[index] = points
-    return newArray
 }
 
 

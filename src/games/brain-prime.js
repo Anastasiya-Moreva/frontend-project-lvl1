@@ -1,6 +1,7 @@
-import { getRandom } from "../helpers.js"
-import { yesOrNoToBool } from "../helpers.js"
+import { getRandom } from "../index.js"
+import { yesOrNoToBool } from "../index.js"
 import readlineSync from 'readline-sync';
+import { primeNumber } from "../index.js";
 
 
 const gameRound = (username) => {
@@ -18,18 +19,6 @@ const gameRound = (username) => {
         console.log('Correct!');
     }
     return true;
-}
-
-export const primeNumber = (num) => {
-    if (num === 0) {
-        return false
-    }
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
-            return false
-        }
-    }
-    return true
 }
 
 export default gameRound

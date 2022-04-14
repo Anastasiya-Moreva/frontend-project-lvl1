@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
-import { getRandom } from '../helpers.js'
+import { getRandom } from '../index.js'
+import { maxDevid } from '../index.js';
 
 const gameRound = (username) => {
     const num1 = getRandom(0, 100)
@@ -18,13 +19,5 @@ const gameRound = (username) => {
 }
 
 
-export const maxDevid = (num1, num2) => {
-    const min = Math.min(num1, num2)
-    for (let i = min; i > 0; i--) {
-        if (num1 % i === 0 && num2 % i === 0) {
-            return i
-        }
-    }
-}
 
 export default gameRound

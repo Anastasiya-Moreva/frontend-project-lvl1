@@ -1,4 +1,4 @@
-import { getRandom, getRandomOperator, calc } from '../helpers.js'
+import { getRandom, getRandomOperator, calc } from '../index.js'
 import readlineSync from 'readline-sync';
 
 
