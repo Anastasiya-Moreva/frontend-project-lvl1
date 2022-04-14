@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
-import { yesOrNoToBool, isEven, getRandom } from '../index.js'
-
+import { yesOrNoToBool, isEven, getRandom } from '../index.js';
 
 const gameRound = (username) => {
   const number = getRandom(0, 100);
@@ -20,4 +19,4 @@ const gameRound = (username) => {
   return result;
 };
 
-export default gameRound
+export default gameRound;
