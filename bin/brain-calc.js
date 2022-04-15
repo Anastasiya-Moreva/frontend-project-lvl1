@@ -4,4 +4,5 @@ import { startGame } from '../src/games/start.js';
 import { greetitg } from '../src/cli.js';
 
 const username = greetitg();
-startGame(username, gameRound);
+const description = 'What is the result of the expression?';
+startGame(username, gameRound, description);

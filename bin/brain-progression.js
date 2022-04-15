@@ -3,4 +3,5 @@ import { startGame } from '../src/games/start.js';
 import { greetitg } from '../src/cli.js';
 
 const username = greetitg();
-startGame(username, gameRound);
+const description = 'What number is missing in the progression?';
+startGame(username, gameRound, description);

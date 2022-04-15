@@ -5,7 +5,7 @@ const gameRound = (username) => {
   const num1 = getRandom(0, 100);
   const num2 = getRandom(0, 100);
 
-  const userAnswer = readlineSync.question(`Find the greatest common divisor of given numbers.\nQuestion: ${num1} ${num2}\n`);
+  const userAnswer = readlineSync.question(`Question: ${num1} ${num2}\n`);
   console.log(`Your answer: ${userAnswer}`);
   const answer = maxDevid(num1, num2);
   if (Number(userAnswer) === answer) {

@@ -3,7 +3,7 @@ import { yesOrNoToBool, isEven, getRandom } from '../index.js';
 
 const gameRound = (username) => {
   const number = getRandom(0, 100);
-  const question = `Answer "yes" if the is even, otherwise answer "no" \nQuestion: ${number}\nYour answer: `;
+  const question = `Question: ${number}\nYour answer: `;
   const userAnswer = readlineSync.question(question);
   if ((!['yes', 'no'].includes(userAnswer))) {
     console.log('Input is Incorrect');

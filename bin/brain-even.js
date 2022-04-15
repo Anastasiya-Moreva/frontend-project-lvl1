@@ -3,4 +3,5 @@ import { startGame } from '../src/games/start.js';
 import { greetitg } from '../src/cli.js';
 
 const username = greetitg();
-startGame(username, gameRound);
+const description = 'Answer "yes" if the is even, otherwise answer "no"';
+startGame(username, gameRound, description);
