@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandom, yesOrNoToBool, primeNumber } from '../index.js';
+import { getRandom, yesOrNoToBool, primeNumber } from '../helpers.js';
 
-const gameRound = (username) => {
+const gameRound = () => {
   const number = getRandom(0, 100);
   const question = `Question: ${number}\nYour answer: `;
   const userAnswer = readlineSync.question(question);
@@ -11,8 +11,7 @@ const gameRound = (username) => {
   }
   const result = yesOrNoToBool(userAnswer);
   if (result !== primeNumber(number)) {
-    console.log(`"${userAnswer}" is wrong answer ;(.Correct answer was "${result ? 'yes' : 'no'}" Let's try again, ${username}!)`);
-    return false;
+    return [false, userAnswer, result ? 'yes' : 'no'];
   }
   console.log('Correct!');
   return true;

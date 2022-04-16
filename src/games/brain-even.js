@@ -1,22 +1,20 @@
 import readlineSync from 'readline-sync';
-import { yesOrNoToBool, isEven, getRandom } from '../index.js';
+import { yesOrNoToBool, isEven, getRandom } from '../helpers.js';
 
-const gameRound = (username) => {
+const gameRound = () => {
   const number = getRandom(0, 100);
   const question = `Question: ${number}\nYour answer: `;
   const userAnswer = readlineSync.question(question);
+  const answer = isEven(number);
   if ((!['yes', 'no'].includes(userAnswer))) {
     console.log('Input is Incorrect');
-    return false;
+    return [false, userAnswer, answer];
   }
-  const answer = isEven(number);
   const result = yesOrNoToBool(userAnswer) === answer;
   if (result === false) {
-    console.log(`${userAnswer} is wrong answer ;(.Correct answer was ${answer}\n Let's try again, ${username}!)`);
-  } else {
-    console.log('Correct!');
+    return [result, userAnswer, answer];
   }
-  return result;
+  return [result, userAnswer, answer];
 };
 
 export default gameRound;

@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandom, getRandomOperator, calc } from '../index.js';
+import { getRandom, getRandomOperator, calc } from '../helpers.js';
 
-const gameRound = (username) => {
+const gameRound = () => {
   const num1 = getRandom(0, 100);
   const num2 = getRandom(0, 100);
   const mathOperator = getRandomOperator();
@@ -15,9 +15,9 @@ const gameRound = (username) => {
     return true;
   }
   if (userAnswer !== answer) {
-    console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.\nLet's try again, ${username}!`);
+    return [false, userAnswer, answer];
   }
-  return false;
+  return [false, userAnswer, answer];
 };
 
 export default gameRound;

@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandom, maxDevid } from '../index.js';
+import { getRandom, maxDevid } from '../helpers.js';
 
-const gameRound = (username) => {
+const gameRound = () => {
   const num1 = getRandom(0, 100);
   const num2 = getRandom(0, 100);
 
@@ -9,12 +9,9 @@ const gameRound = (username) => {
   console.log(`Your answer: ${userAnswer}`);
   const answer = maxDevid(num1, num2);
   if (Number(userAnswer) === answer) {
-    console.log('Correct!');
-    return true;
+    return [true, userAnswer, answer];
   }
-  console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}.\nLet's try again, ${username}!`);
-
-  return false;
+  return [false, userAnswer, answer];
 };
 
 export default gameRound;

@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { getRandom, arithProgressiv, hideValue } from '../index.js';
+import { getRandom, arithProgressiv, hideValue } from '../helpers.js';
 
-const gameRound = (username) => {
+const gameRound = () => {
   const arr = arithProgressiv(getRandom(0, 100), getRandom(0, 100));
   const index = getRandom(0, arr.length - 1);
   const hide = hideValue(arr, index);
@@ -10,15 +10,9 @@ const gameRound = (username) => {
   userAnswer = Number(userAnswer);
   const answer = arr[index];
   if (Number(userAnswer) === answer) {
-    console.log('Correct!');
-    return true;
+    return [true, userAnswer, answer];
   }
-
-  if (Number(userAnswer) !== answer) {
-    console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}}. Let's try again, ${username}!`);
-    return false;
-  }
-  return true;
+  return [false, userAnswer, answer];
 };
 
 export default gameRound;
