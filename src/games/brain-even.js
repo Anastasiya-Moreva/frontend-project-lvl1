@@ -7,7 +7,7 @@ const gameRound = () => {
   const userAnswer = readlineSync.question(question);
   const answer = isEven(number);
   if ((!['yes', 'no'].includes(userAnswer))) {
-    //  console.log('Input is Incorrect');
+    console.log('Input is Incorrect');
     return [false, userAnswer, answer];
   }
   const result = yesOrNoToBool(userAnswer) === answer;
