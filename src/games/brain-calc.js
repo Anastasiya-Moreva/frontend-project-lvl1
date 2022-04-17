@@ -11,11 +11,7 @@ const gameRound = () => {
   console.log(`Your answer: ${userAnswer}`);
   const answer = calc(num1, num2, mathOperator);
   if (userAnswer === answer) {
-    console.log('Correct!');
-    return true;
-  }
-  if (userAnswer !== answer) {
-    return [false, userAnswer, answer];
+    return [true, userAnswer, answer];
   }
   return [false, userAnswer, answer];
 };

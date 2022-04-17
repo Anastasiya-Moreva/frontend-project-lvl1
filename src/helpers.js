@@ -34,7 +34,7 @@ export const maxDevid = (num1, num2) => { // brain-gcd
   return NaN;
 };
 
-export const primeNumber = (num) => { // brain-prime
+export const isPrimeNumber = (num) => { // brain-prime
   if (num === 0) {
     return false;
   }
@@ -64,3 +64,5 @@ export const hideValue = (array, index) => {
   newArray[index] = points;
   return newArray;
 };
+
+export const yesOrNo = (x) => (x ? 'yes' : 'no');
