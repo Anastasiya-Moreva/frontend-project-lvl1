@@ -6,15 +6,64 @@
 [![Actions Status](https://github.com/Anastasiya-Moreva/frontend-project-lvl1/workflows/CI/badge.svg)](https://github.com/Anastasiya-Moreva/frontend-project-lvl1/actions)
 
 
-## Rec Win
 
-<link rel="alternate" type="application/x-asciicast" href="https://asciinema.org/a/2lymUPcWVSPIiw7BPECdEDmWo">
+## Brain-progression
 
 ### win
-<a href="https://asciinema.org/a/2lymUPcWVSPIiw7BPECdEDmWo" target="_blank"></a><img src="https://asciinema.org/a/2lymUPcWVSPIiw7BPECdEDmWo.svg"></img>
+<a href="https://asciinema.org/a/GeNhsbJr1Y9N0izg1QrRL4FJC" target="_blank"></a><img src="https://asciinema.org/a/GeNhsbJr1Y9N0izg1QrRL4FJC.svg"></img>
 
 ### lose
-<a href="https://asciinema.org/a/nNgU6JEBLnABwgp5yxPH6Q3YK" target="_blank"></a><img src="https://asciinema.org/a/nNgU6JEBLnABwgp5yxPH6Q3YK.svg"></img>
+<a href="https://asciinema.org/a/rXrFOnz3nN35iLoPUxtiTmXIj" target="_blank"></a><img src="https://asciinema.org/a/rXrFOnz3nN35iLoPUxtiTmXIj.svg"></img>
+
+
+## Brain-prime
+
+### win
+
+<a href="https://asciinema.org/a/K5EueDpgCaNmLPssEFTMnNjNj" target="_blank"></a><img src="https://asciinema.org/a/K5EueDpgCaNmLPssEFTMnNjNj.svg"></img>
+
+
+### lose
+<a href="https://asciinema.org/a/5xZENjRtlgDFAdilo8sKt0TIU" target="_blank"></a>
+<img src="https://asciinema.org/a/5xZENjRtlgDFAdilo8sKt0TIU.svg"></img>
+
+## Brain-calc
+
+### win
+<a href="https://asciinema.org/a/ZQrEzy5sJcYj0eHNLjk62zMbC" target="_blank"></a><img src="https://asciinema.org/a/ZQrEzy5sJcYj0eHNLjk62zMbC.svg"></img>
+
+## lose
+<a href="https://asciinema.org/a/4PHDADt3EoTYSkvAHe2nrXyOz" target="_blank"></a>
+<img src="https://asciinema.org/a/4PHDADt3EoTYSkvAHe2nrXyOz.svg"></img>
+
+
+## Brain-gcd
+
+### win
+<a href="https://asciinema.org/a/gORBI9aqwNAndWazPl6LVPNF1" target="_blank"></a>
+<img src="https://asciinema.org/a/gORBI9aqwNAndWazPl6LVPNF1.svg"></img>
+
+## lose
+
+<a href="https://asciinema.org/a/Ry12rZN0oOdxUXhqMfCf6n3Xs" target="_blank"></a>
+<img src="https://asciinema.org/a/Ry12rZN0oOdxUXhqMfCf6n3Xs.svg"></img>
+
+
+## Brain-even 
+
+### win
+
+<a href="https://asciinema.org/a/GPrV3e687BYV6v3Nrexnn2Yep" target="_blank"></a>
+<img src="https://asciinema.org/a/GPrV3e687BYV6v3Nrexnn2Yep.svg"></img>
+
+## lose
+
+<a href="https://asciinema.org/a/FOJf3hiIz17H3ckiOedTsETcT" target="_blank"></a>
+<img src="https://asciinema.org/a/FOJf3hiIz17H3ckiOedTsETcT.svg"></img>
+
+
+
 
 ### install
-<a href="https://asciinema.org/a/wDDzMIMP7dxlqSasD84iBZ3k5" target="_blank"></a><img src="https://asciinema.org/a/wDDzMIMP7dxlqSasD84iBZ3k5.svg"></img>
+<a href="https://asciinema.org/a/488113" target="_blank"></a>
+<img src="https://asciinema.org/a/488113.svg"></img>

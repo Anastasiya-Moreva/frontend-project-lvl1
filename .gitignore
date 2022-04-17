@@ -1,3 +1,4 @@
 node_modules 
 rec_*
 /extra
+.idea/
