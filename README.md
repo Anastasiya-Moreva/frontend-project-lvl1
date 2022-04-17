@@ -9,6 +9,10 @@
 
 ## Brain-progression
 
+```bash
+make brain-proggression
+```
+
 ### win
 <a href="https://asciinema.org/a/GeNhsbJr1Y9N0izg1QrRL4FJC" target="_blank">
   <img src="https://asciinema.org/a/GeNhsbJr1Y9N0izg1QrRL4FJC.svg"></img>
@@ -21,6 +25,9 @@
 
 ## Brain-prime
 
+```bash
+make brain-prime
+```
 ### win
 
 <a href="https://asciinema.org/a/K5EueDpgCaNmLPssEFTMnNjNj" target="_blank">
@@ -34,6 +41,9 @@
 
 ## Brain-calc
 
+```bash
+make brain-calc
+```
 ### win
 <a href="https://asciinema.org/a/ZQrEzy5sJcYj0eHNLjk62zMbC" target="_blank">
   <img src="https://asciinema.org/a/ZQrEzy5sJcYj0eHNLjk62zMbC.svg"></img>
@@ -46,7 +56,9 @@
 
 
 ## Brain-gcd
-
+```bash
+make brain-gcd
+```
 ### win
 <a href="https://asciinema.org/a/gORBI9aqwNAndWazPl6LVPNF1" target="_blank">
   <img src="https://asciinema.org/a/gORBI9aqwNAndWazPl6LVPNF1.svg"></img>
@@ -57,8 +69,11 @@
   <img src="https://asciinema.org/a/Ry12rZN0oOdxUXhqMfCf6n3Xs.svg"></img>
 </a>
 
-## Brain-even 
+## Brain-even
 
+```bash
+make brain-even
+```
 ### win
 
 <a href="https://asciinema.org/a/GPrV3e687BYV6v3Nrexnn2Yep" target="_blank">
@@ -73,6 +88,9 @@
 
 
 ### install
+```bash
+make brain-install
+```
 <a href="https://asciinema.org/a/488113" target="_blank">
   <img src="https://asciinema.org/a/488113.svg"></img>
 </a>
