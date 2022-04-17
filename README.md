@@ -60,9 +60,11 @@ make brain-calc
 make brain-gcd
 ```
 ### win
+
 <a href="https://asciinema.org/a/gORBI9aqwNAndWazPl6LVPNF1" target="_blank">
   <img src="https://asciinema.org/a/gORBI9aqwNAndWazPl6LVPNF1.svg"></img>
 </a>
+
 ## lose
 
 <a href="https://asciinema.org/a/Ry12rZN0oOdxUXhqMfCf6n3Xs" target="_blank">
