@@ -10,60 +10,69 @@
 ## Brain-progression
 
 ### win
-<a href="https://asciinema.org/a/GeNhsbJr1Y9N0izg1QrRL4FJC" target="_blank"></a><img src="https://asciinema.org/a/GeNhsbJr1Y9N0izg1QrRL4FJC.svg"></img>
+<a href="https://asciinema.org/a/GeNhsbJr1Y9N0izg1QrRL4FJC" target="_blank">
+  <img src="https://asciinema.org/a/GeNhsbJr1Y9N0izg1QrRL4FJC.svg"></img>
+</a>
 
 ### lose
-<a href="https://asciinema.org/a/rXrFOnz3nN35iLoPUxtiTmXIj" target="_blank"></a><img src="https://asciinema.org/a/rXrFOnz3nN35iLoPUxtiTmXIj.svg"></img>
-
+<a href="https://asciinema.org/a/rXrFOnz3nN35iLoPUxtiTmXIj" target="_blank">
+  <img src="https://asciinema.org/a/rXrFOnz3nN35iLoPUxtiTmXIj.svg"></img>
+</a>
 
 ## Brain-prime
 
 ### win
 
-<a href="https://asciinema.org/a/K5EueDpgCaNmLPssEFTMnNjNj" target="_blank"></a><img src="https://asciinema.org/a/K5EueDpgCaNmLPssEFTMnNjNj.svg"></img>
-
+<a href="https://asciinema.org/a/K5EueDpgCaNmLPssEFTMnNjNj" target="_blank">
+  <img src="https://asciinema.org/a/K5EueDpgCaNmLPssEFTMnNjNj.svg"></img>
+</a>
 
 ### lose
-<a href="https://asciinema.org/a/5xZENjRtlgDFAdilo8sKt0TIU" target="_blank"></a>
-<img src="https://asciinema.org/a/5xZENjRtlgDFAdilo8sKt0TIU.svg"></img>
+<a href="https://asciinema.org/a/5xZENjRtlgDFAdilo8sKt0TIU" target="_blank">
+  <img src="https://asciinema.org/a/5xZENjRtlgDFAdilo8sKt0TIU.svg"></img>
+</a>
 
 ## Brain-calc
 
 ### win
-<a href="https://asciinema.org/a/ZQrEzy5sJcYj0eHNLjk62zMbC" target="_blank"></a><img src="https://asciinema.org/a/ZQrEzy5sJcYj0eHNLjk62zMbC.svg"></img>
+<a href="https://asciinema.org/a/ZQrEzy5sJcYj0eHNLjk62zMbC" target="_blank">
+  <img src="https://asciinema.org/a/ZQrEzy5sJcYj0eHNLjk62zMbC.svg"></img>
+</a>
 
 ## lose
-<a href="https://asciinema.org/a/4PHDADt3EoTYSkvAHe2nrXyOz" target="_blank"></a>
-<img src="https://asciinema.org/a/4PHDADt3EoTYSkvAHe2nrXyOz.svg"></img>
+<a href="https://asciinema.org/a/4PHDADt3EoTYSkvAHe2nrXyOz" target="_blank">
+  <img src="https://asciinema.org/a/4PHDADt3EoTYSkvAHe2nrXyOz.svg"></img>
+</a>
 
 
 ## Brain-gcd
 
 ### win
-<a href="https://asciinema.org/a/gORBI9aqwNAndWazPl6LVPNF1" target="_blank"></a>
-<img src="https://asciinema.org/a/gORBI9aqwNAndWazPl6LVPNF1.svg"></img>
-
+<a href="https://asciinema.org/a/gORBI9aqwNAndWazPl6LVPNF1" target="_blank">
+  <img src="https://asciinema.org/a/gORBI9aqwNAndWazPl6LVPNF1.svg"></img>
+</a>
 ## lose
 
-<a href="https://asciinema.org/a/Ry12rZN0oOdxUXhqMfCf6n3Xs" target="_blank"></a>
-<img src="https://asciinema.org/a/Ry12rZN0oOdxUXhqMfCf6n3Xs.svg"></img>
-
+<a href="https://asciinema.org/a/Ry12rZN0oOdxUXhqMfCf6n3Xs" target="_blank">
+  <img src="https://asciinema.org/a/Ry12rZN0oOdxUXhqMfCf6n3Xs.svg"></img>
+</a>
 
 ## Brain-even 
 
 ### win
 
-<a href="https://asciinema.org/a/GPrV3e687BYV6v3Nrexnn2Yep" target="_blank"></a>
-<img src="https://asciinema.org/a/GPrV3e687BYV6v3Nrexnn2Yep.svg"></img>
+<a href="https://asciinema.org/a/GPrV3e687BYV6v3Nrexnn2Yep" target="_blank">
+  <img src="https://asciinema.org/a/GPrV3e687BYV6v3Nrexnn2Yep.svg"></img>
+</a>
 
 ## lose
 
-<a href="https://asciinema.org/a/FOJf3hiIz17H3ckiOedTsETcT" target="_blank"></a>
-<img src="https://asciinema.org/a/FOJf3hiIz17H3ckiOedTsETcT.svg"></img>
-
-
+<a href="https://asciinema.org/a/FOJf3hiIz17H3ckiOedTsETcT" target="_blank">
+  <img src="https://asciinema.org/a/FOJf3hiIz17H3ckiOedTsETcT.svg"></img>
+</a>
 
 
 ### install
-<a href="https://asciinema.org/a/488113" target="_blank"></a>
-<img src="https://asciinema.org/a/488113.svg"></img>
+<a href="https://asciinema.org/a/488113" target="_blank">
+  <img src="https://asciinema.org/a/488113.svg"></img>
+</a>
