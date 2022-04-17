@@ -6,7 +6,7 @@ const gameRound = () => {
   const index = getRandom(0, arr.length - 1);
   const hide = hideValue(arr, index);
 
-  let userAnswer = readlineSync.question(`Question: ${hide.join(', ')}\nYour answer: `);
+  let userAnswer = readlineSync.question(`Question: ${hide.join(' ')}\nYour answer: `);
   userAnswer = Number(userAnswer);
   const answer = arr[index];
   if (Number(userAnswer) === answer) {
