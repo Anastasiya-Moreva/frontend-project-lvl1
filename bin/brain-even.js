@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 
-import gameRound from '../src/games/brain-even.js';
-import { startGame } from '../src/index.js';
-import { greetitg } from '../src/cli.js';
+import { engineGame } from '../src/index.js';
 
-const username = greetitg();
-const description = 'Answer "yes" if the is even, otherwise answer "no"';
-startGame(username, gameRound, description);
+const description = '"yes" if the number is even, otherwise answer "no"';
+const gameName = 'brain-even';
+engineGame(gameName, description);

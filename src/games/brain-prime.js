@@ -1,9 +1,21 @@
 import readlineSync from 'readline-sync';
-import {
-  getRandom, yesOrNoToBool, isPrimeNumber, yesOrNo,
-} from '../helpers.js';
+import { getRandom, yesOrNoToBool } from '../helpers.js';
 
-const gameRound = () => {
+const yesOrNo = (x) => (x ? 'yes' : 'no');
+
+const isPrimeNumber = (num) => {
+  if (num === 0) {
+    return false;
+  }
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+export const generateData = () => {
   const number = getRandom(0, 100);
   const answer = isPrimeNumber(number);
   const question = `Question: ${number}\nYour answer: `;
@@ -18,4 +30,4 @@ const gameRound = () => {
   return [false, userAnswer, yesOrNo(answer)];
 };
 
-export default gameRound;
+export default generateData;

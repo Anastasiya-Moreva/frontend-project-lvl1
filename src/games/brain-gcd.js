@@ -1,7 +1,17 @@
 import readlineSync from 'readline-sync';
-import { getRandom, maxDevid } from '../helpers.js';
+import { getRandom } from '../helpers.js';
 
-const gameRound = () => {
+export const maxDevid = (num1, num2) => {
+  const min = Math.min(num1, num2);
+  for (let i = min; i > 0; i -= 1) {
+    if (num1 % i === 0 && num2 % i === 0) {
+      return i;
+    }
+  }
+  return NaN;
+};
+
+export const generateData = () => {
   const num1 = getRandom(0, 100);
   const num2 = getRandom(0, 100);
 
@@ -14,4 +24,4 @@ const gameRound = () => {
   return [false, userAnswer, answer];
 };
 
-export default gameRound;
+export default generateData;

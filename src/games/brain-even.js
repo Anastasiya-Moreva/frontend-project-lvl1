@@ -1,7 +1,9 @@
 import readlineSync from 'readline-sync';
-import { yesOrNoToBool, isEven, getRandom } from '../helpers.js';
+import { getRandom, yesOrNoToBool } from '../helpers.js';
 
-const gameRound = () => {
+const isEven = (number) => number % 2 === 0;
+
+export const generateData = () => {
   const number = getRandom(0, 100);
   const question = `Question: ${number}\nYour answer: `;
   const userAnswer = readlineSync.question(question);
@@ -17,4 +19,4 @@ const gameRound = () => {
   return [result, userAnswer, answer];
 };
 
-export default gameRound;
+export default generateData;

@@ -1,7 +1,22 @@
 import readlineSync from 'readline-sync';
-import { getRandom, getRandomOperator, calc } from '../helpers.js';
+import { getRandom } from '../helpers.js';
 
-const gameRound = () => {
+const getRandomOperator = () => ['+', '-', '*'][getRandom(0, 2)];
+
+const calc = (num1, num2, operator) => {
+  switch (operator) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      return NaN;
+  }
+};
+
+export const generateData = () => {
   const num1 = getRandom(0, 100);
   const num2 = getRandom(0, 100);
   const mathOperator = getRandomOperator();
@@ -16,4 +31,4 @@ const gameRound = () => {
   return [false, userAnswer, answer];
 };
 
-export default gameRound;
+export default generateData;
