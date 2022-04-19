@@ -1,5 +1,8 @@
 import readlineSync from 'readline-sync';
 import { getRandom } from '../helpers.js';
+import { engineGame } from '../index.js';
+
+const description = 'What is the result of the expression?';
 
 const getRandomOperator = () => ['+', '-', '*'][getRandom(0, 2)];
 
@@ -31,4 +34,6 @@ export const generateData = () => {
   return [false, userAnswer, answer];
 };
 
-export default generateData;
+const startCalc = () => engineGame(generateData, description);
+
+export default startCalc;

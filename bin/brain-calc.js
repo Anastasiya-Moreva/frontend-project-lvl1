@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { engineGame } from '../src/index.js';
+import startCalc from '../src/games/brain-calc.js';
 
-const description = 'What is the result of the expression?';
-const gameName = 'brain-calc';
-engineGame(gameName, description);
+startCalc();

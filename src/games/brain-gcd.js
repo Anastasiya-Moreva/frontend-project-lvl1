@@ -1,14 +1,13 @@
 import readlineSync from 'readline-sync';
 import { getRandom } from '../helpers.js';
+import { engineGame } from '../index.js';
 
+const description = 'Find the greatest common divisor of given numbers.';
 export const maxDevid = (num1, num2) => {
-  const min = Math.min(num1, num2);
-  for (let i = min; i > 0; i -= 1) {
-    if (num1 % i === 0 && num2 % i === 0) {
-      return i;
-    }
+  if (!num2) {
+    return num1;
   }
-  return NaN;
+  return maxDevid(num2, num1 % num2);
 };
 
 export const generateData = () => {
@@ -23,5 +22,6 @@ export const generateData = () => {
   }
   return [false, userAnswer, answer];
 };
+const startGcd = () => engineGame(generateData, description);
 
-export default generateData;
+export default startGcd;

@@ -1,5 +1,8 @@
 import readlineSync from 'readline-sync';
 import { getRandom } from '../helpers.js';
+import { engineGame } from '../index.js';
+
+const description = 'What number is missing in the progression?';
 
 const arithProgressiv = (num, delta, elements = 10) => {
   const values = [];
@@ -33,5 +36,6 @@ export const generateData = () => {
   }
   return [false, userAnswer, answer];
 };
+const startProgression = () => engineGame(generateData, description);
 
-export default generateData;
+export default startProgression;
