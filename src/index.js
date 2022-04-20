@@ -9,8 +9,10 @@ export const engineGame = (gameFunc, description) => {
   console.log(description);
 
   for (let i = 0; i < numberRound; i += 1) {
-    const [resultRound, userAnswer, answer] = gameFunc();
-    if (!resultRound) {
+    const [question, answer] = gameFunc();
+    console.log(question);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (answer !== userAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}".\nLet's try again, ${username}!`);
       return;
     }

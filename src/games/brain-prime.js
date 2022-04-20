@@ -1,16 +1,7 @@
-import readlineSync from 'readline-sync';
-import { getRandom } from '../helpers.js';
+import { getRandom, yesOrNo } from '../helpers.js';
 import { engineGame } from '../index.js';
 
 const description = 'Answer "yes" if given is prime. Otherwise answer "no"';
-const yesOrNo = (x) => (x ? 'yes' : 'no');
-
-const yesOrNoToBool = (value) => {
-  if (value.toLowerCase() === 'yes') {
-    return true;
-  }
-  return false;
-};
 
 const isPrimeNumber = (num) => {
   if (num === 0) {
@@ -27,16 +18,8 @@ const isPrimeNumber = (num) => {
 export const generateData = () => {
   const number = getRandom(0, 100);
   const answer = isPrimeNumber(number);
-  const question = `Question: ${number}\nYour answer: `;
-  const userAnswer = readlineSync.question(question);
-  if ((!['yes', 'no'].includes(userAnswer))) {
-    console.log('Input is Incorrect');
-    return [false, userAnswer, yesOrNo(answer)];
-  }
-  if (yesOrNoToBool(userAnswer) === answer) {
-    return [true, userAnswer, yesOrNo(answer)];
-  }
-  return [false, userAnswer, yesOrNo(answer)];
+  const question = `Question: ${number}`;
+  return [question, yesOrNo(answer)];
 };
 const startPrime = () => engineGame(generateData, description);
 

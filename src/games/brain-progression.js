@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import { getRandom } from '../helpers.js';
 import { engineGame } from '../index.js';
 
@@ -28,14 +27,11 @@ export const generateData = () => {
   const index = getRandom(0, arr.length - 1);
   const hide = hideValue(arr, index);
 
-  let userAnswer = readlineSync.question(`Question: ${hide.join(' ')}\nYour answer: `);
-  userAnswer = Number(userAnswer);
+  const question = `Question: ${hide.join(' ')}`;
   const answer = arr[index];
-  if (Number(userAnswer) === answer) {
-    return [true, userAnswer, answer];
-  }
-  return [false, userAnswer, answer];
+  return [question, String(answer)];
 };
+
 const startProgression = () => engineGame(generateData, description);
 
 export default startProgression;

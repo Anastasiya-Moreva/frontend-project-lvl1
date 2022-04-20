@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import { getRandom } from '../helpers.js';
 import { engineGame } from '../index.js';
 
@@ -24,14 +23,9 @@ export const generateData = () => {
   const num2 = getRandom(0, 100);
   const mathOperator = getRandomOperator();
 
-  let userAnswer = readlineSync.question(`Question: ${num1} ${mathOperator} ${num2} `);
-  userAnswer = Number(userAnswer);
-  console.log(`Your answer: ${userAnswer}`);
+  const question = `Question: ${num1} ${mathOperator} ${num2}`;
   const answer = calc(num1, num2, mathOperator);
-  if (userAnswer === answer) {
-    return [true, userAnswer, answer];
-  }
-  return [false, userAnswer, answer];
+  return [question, String(answer)];
 };
 
 const startCalc = () => engineGame(generateData, description);
